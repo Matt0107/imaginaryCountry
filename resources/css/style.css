@@ -3,70 +3,263 @@
     box-sizing: border-box;
 }
 img {
-    max-height: 100%;
     max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
 }
 
+
 .welcome {
-    padding: 0;
-    position: relative;
+  position: relative;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 #welcome {
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 35%;
-    left: 35%;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 5%;
 }
-.food{
-    height: 600px;
-}
-.history {
-    height: 500px;
-    background-color: black;
+a {
+  color: #67847C;
 }
 
+/* header */
+
+.header {
+  background-color: transparent;
+  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: transparent;
+}
+
+.header .logo {
+  display: block;
+  /* float: left; */
+  margin-left: 0;
+  font-size: 1rem;
+  padding: 10px 0 20px 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  /* display: inline-block; */
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .welcome{
+    font-size: xx-large;
+  }
+  .header {
+    display:flex;
+    justify-content: space-around; 
+    background: transparent;
+    width: 90%; 
+    margin-left: 0;
+    margin-right: 10%;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+    margin-right: 50px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .logo {
+    font-size: 2em;
+  }
+}
+.food{
+  height: 800px;
+  background-color: aquamarine;
+}
+.popular-places{
+  height: 800px;
+  background-color: red;
+}
+.history{
+  height: 800px;
+  background-color: blue;
+}
+
+/* #welcome {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
 .button {
   padding: 2rem;
-  /* font-size: 16px; */
+  font-size: 16px; 
   border: none;
   position: fixed;
-  background: black;
+  background: white;
   display: block;
   left: 0;
   top: 0;
 }
-
 .dropdown {
   position: relative;
-  display: inline-block;
   z-index: 1;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px wheat (0,0,0,0.2);
   z-index: 1;
   position: fixed;
+  list-style: none;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
-  text-decoration: underline;
   display: block;
+  font-size: larger;
+}
+.food{
+  height: 800px;
+  background-color: aquamarine;
+}
+.popular-places{
+  height: 800px;
+  background-color: red;
+}
+.history{
+  height: 800px;
+  background-color: blue;
 }
 
-/* 
-.dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;} */
+/* .dropdown-content a:hover {background-color: #67847C;}
+
+.dropdown:hover .dropdown-content {display: block;} 
+
+@media screen and (min-width:760px) {
+  img {
+    min-width: 100%;
+    max-height: 750px;
+  }
+  .dropdown-content {
+    display:flex;
+    justify-content: space-around; 
+    background: transparent;
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .button {
+    display: none;
+  }
+  .dropdown-content a {
+    color:#3C6545;
+    font-size: larger;
+    text-decoration: none;
+  }
+} */
