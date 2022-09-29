@@ -43,6 +43,41 @@ width: 17rem;
     margin-top: 10px;
  }
 
+ .contact-us{
+    background-color: #67847C;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+ }
+.contactLink{
+    display: flex;
+    justify-items: end;
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+}
+.footerLinks{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLinks>a{
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
  @media screen and (max-width:1100px) {
     .popular-places{
         padding: 2rem;
