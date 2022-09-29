@@ -21,27 +21,30 @@
     margin: 1rem;
 }
 .place{
+
+    width: 20rem;
     height: 200px;
     box-shadow: 15px 15px 22px 3px rgba(0,0,0,0.75);
 }
 
 .contact-us{
-    padding: 5rem;
+    padding: 3rem;
     background-color: #67847C;
     background-image: url('assets/Banner.jpg');
+    display: flex;
+    flex-direction: column;
 }
 .contactLink{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    padding: 2rem;
     color: bisque;
 }
 .footerLinks{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 2rem;
+    justify-content: space-around;
+    font-size: 1rem;
 }
 .footerLinks>span>a{
     text-decoration: none; 

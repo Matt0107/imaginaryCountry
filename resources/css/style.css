@@ -64,19 +64,12 @@ width: 17rem;
     display: flex;
     justify-content: space-between;
 }
-.footerLinks>a{
+.footerLinks>span>a{
     text-decoration: none;
     color: #f3f3f3;
     font-size: 1.5rem;
 
 }
-
-
-
-
-
-
-
 
  @media screen and (max-width:1100px) {
     .popular-places{
