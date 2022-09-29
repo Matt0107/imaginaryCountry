@@ -1,4 +1,4 @@
-@media screen and (max-width: 415px){
+@media screen and (max-width: 650px){
     body{
         margin: 0;
         padding: 0;
@@ -44,7 +44,6 @@
     font-size: 2rem;
 }
 .footerLinks>span>a{
-    padding-top: 2rem;
     text-decoration: none; 
     color: bisque;
 }
