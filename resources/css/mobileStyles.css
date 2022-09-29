@@ -1,4 +1,4 @@
-@media screen and (max-width: 395px){
+@media screen and (max-width: 415px){
     body{
         margin: 0;
         padding: 0;
@@ -23,24 +23,29 @@
 .place{
     height: 200px;
     box-shadow: 15px 15px 22px 3px rgba(0,0,0,0.75);
-}}
+}
 
 .contact-us{
-    text-decoration: none;
-    text-align: center;
-    padding: 4rem;
+    padding: 5rem;
     background-color: #67847C;
     background-image: url('assets/Banner.jpg');
 }
-.contact-us ul li{
+.contactLink{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    display: inline;  
-}
-.contact-us>ul{
     padding: 2rem;
-
+    color: bisque;
+}
+.footerLinks{
     display: flex;
     flex-direction: row;
-    padding-right: 2rem;
     justify-content: space-between;
+    font-size: 2rem;
+}
+.footerLinks>span>a{
+    padding-top: 2rem;
+    text-decoration: none; 
+    color: bisque;
+}
 }
