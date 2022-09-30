@@ -1,0 +1,30 @@
+@media screen and (max-width: 395px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .countryLetter{
+        display: none;
+    }
+
+    .placeDescription{
+        display: none;
+    }
+.popular-places{
+    background-color:#67847C ;
+   display: flex;
+   flex-direction: column;    
+}
+.popular-place{
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.place{
+    display: flex;
+    height: 200px;
+    box-shadow: 18px 17px 22px 3px rgba(0,0,0,0.75);
+}
+
+}
