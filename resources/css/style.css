@@ -1,5 +1,7 @@
-* {
+body{
+  background-color: #67847C;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 img {
@@ -17,7 +19,7 @@ img {
 
 }
 #welcome {
-  color: white;
+  color: #f3f3f3;
   position: absolute;
   top: 20%;
   left: 5%;
@@ -25,7 +27,6 @@ img {
 /* header */
 
 .header {
-  background-color: #195652;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -44,7 +45,7 @@ img {
   padding: 20px 20px;
   text-decoration: none;
   font-size: larger;
-  color: #67847C;
+  color:black;
 }
 
 .header li a:hover,
@@ -142,7 +143,6 @@ img {
   .header {
     display:flex;
     justify-content: space-around; 
-    background: #195652;
     width: 90%; 
     margin-left: 0;
     margin-right: 10%;
@@ -166,12 +166,9 @@ img {
     font-size: 2em;
   }
 }
-body{
-    margin: 0;
-    padding: 0;
-}
+
 .popular-places{
-    background-color: #67847C;
+    
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -215,7 +212,6 @@ width: 17rem;
  }
 
  .contact-us{
-    background-color: #67847C;
     height: 15rem;
     display: flex;
     justify-content: center;
@@ -261,11 +257,7 @@ width:10rem;
     font-style: italic;
     
  }}
-body {
-    background: #67847c;
-    font-family: Arial;
-    margin: 0;
-  }
+
   
   article > img {
     max-width: 100%;
@@ -285,7 +277,6 @@ body {
     padding: 15px;
     margin: 5px;
     text-align: justify;
-    font-style: italic;
     font-weight: 100;
     color: #f3f3f3;
     text-align: center;
@@ -329,3 +320,36 @@ body {
       width: 50%;
     }
   }
+
+  .history {
+    font-family: Arial, sans-serif;
+    color:#f3f3f3;
+}
+
+.history article {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+}
+
+.history article img {
+    width: 30%;
+    object-fit: cover;
+    max-height: 50vh;
+}
+
+.history article p {
+    width: 70%;
+}
+
+article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width:768px) {
+    .history article {
+        display: flex;
+        flex-direction: column;
+        column-gap: 1em;
+    }
+}
