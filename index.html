@@ -1,28 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Veal</title>
-</head>
-<body>
-    <section class="popularPlaces">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
+        <link rel="stylesheet" href="./resources/css/mobileStyles.css"/>
+        <title>Welcome to Veal</title>
+    </head>
 
+    <body>
+        <header class="header"> 
+            <a href="index.html" class="logo"><span style="color: black">VEAL</span></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#popular-places">Popular places</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="welcome" id="wel">
+                <h1 id="welcome">Welcome to <span style="color:#3C6545">Veal</span></h1>
+                <img id="headerImage" src="assets/Banner.jpg" alt="banner">
+            </div>
+            <section class="popular-places" id="popular-places">
+                
+                <div class="popular-place">
+                <p class="countryLetter">V</p>
+                <img src="assets/V.jpg" alt="Place one" class="place">
+                <p class="placeDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, recusandae saepe repudiandae mollitia unde dicta, soluta error a praesentium quos modi enim quod, officia fugit laboriosam? Praesentium laudantium ad animi?</p>
+                </div>
 
-    </section>
+                <div class="popular-place">
+                    <p class="placeDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, recusandae saepe repudiandae mollitia unde dicta, soluta error a praesentium quos modi enim quod, officia fugit laboriosam? Praesentium laudantium ad animi?</p>
+                    <img src="assets/E.jpg" alt="Place Two" class="place">
+                    <p class="countryLetter">E</p>
 
-    <section class="food">
+                    </div>
 
+                    <div class="popular-place">
+                        <p class="countryLetter">A</p>
+                        <img src="assets/A.jpg" alt="Place thre" class="place">
+                        <p class="placeDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, recusandae saepe repudiandae mollitia unde dicta, soluta error a praesentium quos modi enim quod, officia fugit laboriosam? Praesentium laudantium ad animi?</p>
+                        </div>  
 
-    </section>
+                        <div class="popular-place">
+                            <p class="placeDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, recusandae saepe repudiandae mollitia unde dicta, soluta error a praesentium quos modi enim quod, officia fugit laboriosam? Praesentium laudantium ad animi?</p>
 
-    <section class="history">
+                            <img src="assets/L.jpg" alt="Place four" class="place">
+                            <p class="countryLetter">L</p>
 
+                            </div>  
+             </section>
+            <section class="food" id="food">
+                  <article>
+                    <img
+                      src="assets/food1.jpg"
+                    />
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the
+                      1500s, when an unknown printer took a galley of type and scrambled it
+                      to make a type specimen book. It has survived not only five centuries,
+                      but also the leap into electronic typesetting, remaining essentially
+                      unchanged. It was popularised in the 1960s with the release of
+                      Letraset sheets containing Lorem Ipsum passages, and more recently
+                      with desktop publishing software like Aldus PageMaker including
+                      versions of Lorem Ipsum.
+                    </p>
+                  </article>
+                  <article>
+                    <img
+                      src="assets/food2.jpg"
+                    />
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the
+                      1500s, when an unknown printer took a galley of type and scrambled it
+                      to make a type specimen book. It has survived not only five centuries,
+                      but also the leap into electronic typesetting, remaining essentially
+                      unchanged. It was popularised in the 1960s with the release of
+                      Letraset sheets containing Lorem Ipsum passages, and more recently
+                      with desktop publishing software like Aldus PageMaker including
+                      versions of Lorem Ipsum.
+                    </p>
+                  </article>
+                  <article>
+                    <img
+                      src="assets/food3.jpg"
+                    />
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the
+                      1500s, when an unknown printer took a galley of type and scrambled it
+                      to make a type specimen book. It has survived not only five centuries,
+                      but also the leap into electronic typesetting, remaining essentially
+                      unchanged. It was popularised in the 1960s with the release of
+                      Letraset sheets containing Lorem Ipsum passages, and more recently
+                      with desktop publishing software like Aldus PageMaker including
+                      versions of Lorem Ipsum.
+                    </p>
+                  </article>
+            </section>
+            <section class="history" id="history">
+              <article
+              class="media"
+              @media
+              only
+              screen
+              and
+              (max-width:
+              768px)
+            ></article>
+            <article class="bust">
+              <img src="assets/bust-history.jpg" alt="statue of someone">
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </article>
+            <article class="ruins">
+              <img src="assets/ruins-history.jpg" alt="castle ruins">
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </article>
+          </section>
+            </section>
+        </main>
 
-    </section>
-    
-</body>
+        <footer>
+            <!-- <i> website logo or title </i> -->
+            <section class="contact-us">
+                <a href="#" class="contactLink">Contact Us</a>
+                <div class="footerLinks">
+                    <span><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></span>
+                    <span><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></span>
+                    <span><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+                </div>
+               
+                
+            </section>
+        </footer>
+        <script src="./resources/js/index.js"></script>
+    </body>
 </html>
-
-lorem
