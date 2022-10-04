@@ -166,6 +166,7 @@ img {
     font-size: 2em;
   }
 }
+/* popular places section */
 
 .popular-places{
     
@@ -211,6 +212,7 @@ width: 17rem;
     margin-top: 10px;
  }
 
+ /* Footer section */
  .contact-us{
     height: 15rem;
     display: flex;
@@ -237,7 +239,8 @@ width: 17rem;
     font-size: 1.5rem;
 
 }
-
+ /* popular places breakpoint */
+ 
  @media screen and (max-width:1100px) {
     .popular-places{
         padding: 2rem;
