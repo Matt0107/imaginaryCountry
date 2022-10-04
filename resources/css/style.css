@@ -1,6 +1,6 @@
 body{
-  background-color: #67847C;
-    margin: 0;
+  background: hsla(165, 89%, 31%, 1);
+      margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
