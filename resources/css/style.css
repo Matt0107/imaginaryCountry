@@ -1,6 +1,6 @@
 body{
-  background-color: #67847C;
-    margin: 0;
+  background: hsla(165, 89%, 31%, 1);
+      margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -162,6 +162,7 @@ body{
     padding-left: 15px;
   }
 }
+/* popular places section */
 
 .popular-places{
     
@@ -203,6 +204,7 @@ width: 17rem;
     margin-top: 10px;
  }
 
+ /* Footer section */
  .contact-us{
     height: 15rem;
     display: flex;
@@ -237,6 +239,7 @@ width: 17rem;
   .place{
     height: 15rem;
     width:10rem;
+    transition: 1.5s;
   }
   .countryLetter{
     display: none;
