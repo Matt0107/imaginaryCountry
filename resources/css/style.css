@@ -30,6 +30,12 @@ body{
   position: fixed;
   width: 100%;
   z-index: 3;
+  transition: 1s ease-in-out background-color;
+}
+.headerBackground{
+  transition: 0.2s ease-in-out background-color;
+  background-color: #195652;
+  transition: 1s;
 }
 .header ul {
   margin: 0;
