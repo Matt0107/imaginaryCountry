@@ -9,10 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
         <link rel="stylesheet" href="./resources/css/mobileStyles.css"/>
+        <script src="./resources/js/index.js"></script>
         <title>Welcome to Veal</title>
     </head>
 
-    <body>
+    <nav>
+      <div class="container">
         <header class="header"> 
             <a href="index.html" class="logo"><span style="color: black">VEAL</span></a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -21,8 +23,11 @@
                 <li><a href="#popular-places">Popular places</a></li>
                 <li><a href="#food">Food</a></li>
                 <li><a href="#history">History</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
             </ul>
         </header>
+      </div>
+    </nav>
         <main>
             <div class="welcome" id="wel">
                 <h1 id="welcome">Welcome to <span style="color:#3C6545">Veal</span></h1>
@@ -144,17 +149,31 @@
 
         <footer>
             <!-- <i> website logo or title </i> -->
-            <section class="contact-us">
-                <a href="#" class="contactLink">Contact Us</a>
+            <section class="contact-us" id="contact-us">
+              <!-- A button to open the popup form -->
+              <button class="open-button" onclick="openForm()">Contact us</button>
+              
+              <!-- The form -->
+              <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Contact us</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="text"><b>Your message</b></label>
+                  <input type="text" placeholder="Your message goes here...." name="text" required>
+              
+                  <button type="submit" class="btn">Send</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div> 
                 <div class="footerLinks">
                     <span><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></span>
                     <span><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></span>
                     <span><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></span>
                 </div>
-               
-                
             </section>
         </footer>
-        <script src="./resources/js/index.js"></script>
     </body>
 </html>
