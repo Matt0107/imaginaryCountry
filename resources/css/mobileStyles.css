@@ -10,6 +10,18 @@
     .placeDescription{
         display: none;
     }
+    .history article img {
+        width: auto;
+        object-fit: cover;
+        max-height: 50vh;
+        margin: 1rem;
+    }
+    .history article p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
 .popular-places{
     background-color:#67847C ;
    display: flex;
