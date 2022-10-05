@@ -9,15 +9,7 @@ function closeForm() {
 const text = document.querySelectorAll(".placeDescription");
 const img = document.querySelectorAll(".place");
 
-// for (let i=0; i<img.length;i++){
-//   img[i].addEventListener('click',function(){
-//     text[i].classList.toggle('activeDescription')
-//   })
-//   text[i].addEventListener('click',function(){
-//     text[i].classList.toggle('placeDescription')
-//     text[i].style.display='none';
-//   })
-// }
+// image overlay for mobile version
 
 window.onresize = function () {
   for (let i = 0; i < img.length; i++) {
@@ -43,3 +35,14 @@ window.onresize = function () {
     }
   }
 };
+
+
+// for (let i=0; i<img.length;i++){
+//   img[i].addEventListener('click',function(){
+//     text[i].classList.toggle('activeDescription')
+//   })
+//   text[i].addEventListener('click',function(){
+//     text[i].classList.toggle('placeDescription')
+//     text[i].style.display='none';
+//   })
+// }
