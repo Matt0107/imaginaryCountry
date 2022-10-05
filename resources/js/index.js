@@ -36,6 +36,22 @@ window.onresize = function () {
   }
 };
 
+// header background transition
+
+const background=document.querySelector('.header');
+
+window.addEventListener('scroll', function(){
+  if (window.scrollY >= 60){
+    background.classList.add('headerBackground')
+  }else{
+    background.classList.remove('headerBackground')
+  }
+})
+
+
+
+
+
 
 // for (let i=0; i<img.length;i++){
 //   img[i].addEventListener('click',function(){
