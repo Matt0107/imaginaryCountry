@@ -238,6 +238,7 @@ width: 17rem;
   .place{
     height: 15rem;
     width:10rem;
+    transition: 1.5s;
   }
   .countryLetter{
     display: none;
