@@ -1,3 +1,13 @@
+const button = document.getElementById("menu-btn");
+const menuItems = document.querySelectorAll(".menuItem");
+
+function toggleMenu() {
+  button.checked=false;
+}
+
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", toggleMenu);
+});
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -47,18 +57,3 @@ window.addEventListener('scroll', function(){
     background.classList.remove('headerBackground')
   }
 })
-
-
-
-
-
-
-// for (let i=0; i<img.length;i++){
-//   img[i].addEventListener('click',function(){
-//     text[i].classList.toggle('activeDescription')
-//   })
-//   text[i].addEventListener('click',function(){
-//     text[i].classList.toggle('placeDescription')
-//     text[i].style.display='none';
-//   })
-// }
