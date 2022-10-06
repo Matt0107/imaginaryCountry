@@ -1,6 +1,6 @@
 body{
-  background-color: #67847C;
-    margin: 0;
+  background: hsla(165, 89%, 31%, 1);
+      margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -30,8 +30,13 @@ body{
   position: fixed;
   width: 100%;
   z-index: 3;
+  transition: 1s ease-in-out background-color;
 }
-
+.headerBackground{
+  transition: 0.2s ease-in-out background-color;
+  background-color: #195652;
+  transition: 1s;
+}
 .header ul {
   margin: 0;
   padding: 0;
@@ -188,6 +193,7 @@ body{
     /* added for the background */
   }
 }
+/* popular places section */
 
 .popular-places{
     
@@ -229,6 +235,7 @@ width: 17rem;
     margin-top: 10px;
  }
 
+ /* Footer section */
  .contact-us{
     height: 15rem;
     display: flex;
@@ -237,13 +244,7 @@ width: 17rem;
     justify-content: space-around;
     flex-direction: row-reverse;
  }
-.contactLink{
-    display: flex;
-    justify-items: end;
-    text-decoration: none;
-    color: #f3f3f3;
-    font-size: 1.5rem;
-}
+
 .footerLinks{
     width: 20rem;
     display: flex;
@@ -269,6 +270,7 @@ width: 17rem;
   .place{
     height: 15rem;
     width:10rem;
+    transition: 1.5s;
   }
   .countryLetter{
     display: none;
@@ -376,3 +378,110 @@ article:nth-child(even) {
         column-gap: 1em;
     }
 }
+/* Give some Paddin so the Navbar is above the section */
+.food  {
+  padding-top:5rem;
+}
+.history  {
+  padding-top:5rem;
+}
+
+/* nav items poping out while hovering */
+
+ul:hover li a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
+}
+
+ul li a:hover{
+  transform:scale(1.4);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:black;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+
+/* Popup form */
+
+/* Button used to open the contact form  */
+.open-button {
+  background-color: #67847C;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-size: 1.5rem;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 40%;
+  border: 5px solid #195652;
+  z-index: 9;
+  border-radius: 15px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #67847C;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the send button */
+.form-container .btn {
+  background-color: #195652; 
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+} 
