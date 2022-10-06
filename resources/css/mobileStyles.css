@@ -37,7 +37,18 @@
   .place:hover {
     box-shadow: 10px 10px 17px 3px rgba(0, 0, 0, 0.75);
   }
-
+  .history article img {
+    width: auto;
+    object-fit: cover;
+    max-height: 50vh;
+    margin: 1rem; 
+}
+    .history article p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+ }
   .contact-us {
     padding: 3rem;
     background-color: #67847c;
