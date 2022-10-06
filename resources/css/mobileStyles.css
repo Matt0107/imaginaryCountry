@@ -1,68 +1,66 @@
-@media screen and (max-width: 896px){
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    .countryLetter{
-        display: none;
-    }
+@media screen and (max-width: 896px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .countryLetter {
+    display: none;
+  }
 
-    .placeDescription{
-        display: none;
-    }
-    .history article img {
-        width: auto;
-        object-fit: cover;
-        max-height: 50vh;
-        margin: 1rem;
-    }
-    .history article p {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-    }
-.popular-places{
-    background-color:#67847C ;
-   display: flex;
-   flex-direction: column;    
-}
-.popular-place{
-    display:flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-.place{
-
+  .placeDescription {
+    display: none;
+    position: absolute;
+    padding-top: 50px;
     width: 20rem;
-    height: 200px;
-    box-shadow: 15px 15px 22px 3px rgba(0,0,0,0.75);
-}
-
-.contact-us{
-    padding: 3rem;
-    background-color: #67847C;
-    background-image: url('assets/Banner.jpg');
+    margin-top: 0;
+    height: 150px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.603);
+  }
+  
+  .popular-places {
+    background-color: #67847c;
     display: flex;
     flex-direction: column;
-}
-.contactLink{
+  }
+  .popular-place {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .place {
+    transition: 1.5s;
+    width: 20rem;
+    height: 200px;
+    box-shadow: 15px 15px 22px 3px rgba(0, 0, 0, 0.75);
+  }
+  .place:hover {
+    box-shadow: 10px 10px 17px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .contact-us {
+    padding: 3rem;
+    background-color: #67847c;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactLink {
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: bisque;
-}
-.footerLinks{
+  }
+  .footerLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1rem;
-}
-.footerLinks>span>a{
-    text-decoration: none; 
+  }
+  .footerLinks > span > a {
+    text-decoration: none;
     color: bisque;
-}
-.food{
+  }
+  .food {
     margin: 1rem;
-}
+  }
 }
