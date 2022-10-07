@@ -3,7 +3,7 @@
 
 ### Introduction
 
-This is the first project of five Wild Code School Web Development bootcamp students. We started creating it within our first month and therefor there was only limited knowledge to work with. However we gave our best to implement various features we found online.
+This is the first project of five Wild Code School Web Development bootcamp students. We started creating it within our first month and therefore there was only limited knowledge to work with. However we gave our best to implement various features we found online.
 This is why the code you will see on the css and js files might seem chaotic and we are still on the process improving them.
 
 
