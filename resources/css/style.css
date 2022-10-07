@@ -175,6 +175,7 @@ body{
   .header li a {
     font-size:1.2em;
     padding: 1.2em;
+    color: #195652;
   }
   .header .menu {
     clear: none;
