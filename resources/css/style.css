@@ -1,5 +1,5 @@
 body{
-  background: hsla(165, 89%, 31%, 1);
+  background: #67847C;
       margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,14 +9,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
-
 .welcome {
   position: relative;
   font-size: 1rem;
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 #welcome {
   color: #f3f3f3;
@@ -34,8 +31,9 @@ body{
 }
 @media screen and (min-width: 896px){
   .headerBackground{
-    transition: 0.2s ease-in-out background-color;
-    background-color: #195652;
+    transition: 0.2s ease-in-out;
+    background-image: url('https://www.uib.no/sites/w3.uib.no/files/styles/content_main_wide_1x/public/media/pine-watt-462535-unsplash.jpg?itok=gj49N0zc&timestamp=1579195851');
+    background-size: cover;
     transition: 1s;
   }
 }
@@ -295,10 +293,9 @@ width: 17rem;
 
   article:nth-of-type(even) {
     flex-direction: row-reverse;
-    background: #67847c
+    background: #67847C
   }
 
-  
   article > p {
     line-height: 1.5em;
     font-size: 20px;
@@ -458,7 +455,7 @@ ul li a:hover:before{
   background-color: #67847C;
 }
 
-/* Full-width input fields */
+/* input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 90%;
   padding: 15px;
@@ -479,7 +476,7 @@ ul li a:hover:before{
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
+/* Add a black background color to the cancel button */
 .form-container .cancel {
   background-color: black;
 }

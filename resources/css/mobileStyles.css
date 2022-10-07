@@ -75,3 +75,7 @@
     margin: 1rem;
   }
 }
+/* input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 85%;
+}
