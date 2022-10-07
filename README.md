@@ -22,10 +22,10 @@ Here is a link to the mockup that we designed in the beginning of the project: *
 
 
 ### Contribution
-----
+
 If you compare the mockup with the current version of the website, you will notice some changes. 
-However there is still a room for improvement to make it more user-friendly, accessible and more stylish in general. 
+However there is still room for improvement to make it more user-friendly, accessible and stylish in general. 
 
 Feel free to fork and work on the design ideas you might think would make the website more *beautiful*. We are open to new ideas and we would appreciate any collaboration and help you might provide!
 
-We feel that with the collaboration of the Github community, there is a potential to this project!
+We feel that with the collaboration of the Github community, there is a big potential to this project!
